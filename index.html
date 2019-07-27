@@ -11,10 +11,11 @@
     </div>
     <script>
       var dodger = document.getElementById('dodger');
-      var leftNumber = dodger.style.left.replace('px','');
-      var left = parseInt(leftNumber, 10);
       
       function moverDodgerLeft(){
+        var leftNumber = dodger.style.left.replace('px','');
+        var left = parseInt(leftNumber, 10);
+        
         if (left > 0){
           dodger.style.left = `${left-1}px`;
         }
